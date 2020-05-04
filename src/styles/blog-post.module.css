@@ -1,0 +1,20 @@
+.blog-post-title {
+  margin: unset;
+}
+.blog-post-date {
+  margin: unset;
+  margin-top: 2px;
+}
+.blog-post-tags {
+  list-style-type: none;
+  margin: unset;
+  padding: unset;
+}
+.blog-post-tag {
+  margin: unset;
+  margin-right: 10px;
+  padding: 4px;
+  display: inline;
+  background: lightsteelblue;
+  border-radius: 5px;
+}

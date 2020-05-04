@@ -1,0 +1,25 @@
+.index-box {
+  margin: unset;
+}
+
+.index-date {
+  margin: unset;
+  font-size:12px;
+}
+
+.index-title {
+  margin: unset;
+}
+
+.index-link {
+  color: black;
+}
+
+.index-link:link, .index-link:visited, .index-link:hover, .index-link:active: {
+  color: black;
+}
+
+.index-hr {
+  border: 0;
+  border-top: 1px dashed gray;
+}
