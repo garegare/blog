@@ -5,14 +5,14 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -H 192.168.56.101",
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop -H 192.168.56.101 --prefix-paths",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve -H 192.168.56.101",
+    "serve": "gatsby serve --prefix-paths -H 192.168.56.101",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^2.20.12",
