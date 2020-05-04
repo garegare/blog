@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-post-jsx","path":"/hello-world/","result":{"data":{"markdownRemark":{"html":"<p>Hello world</p>","frontmatter":{"title":"Hello World","date":"2020-05-01","tags":["test","sample"]}}},"pageContext":{"slug":"/hello-world/"}}}
+{"componentChunkName":"component---src-templates-blog-post-jsx","path":"/hello-world/","result":{"data":{"markdownRemark":{"html":"<p>Hello world</p>","frontmatter":{"title":"Hello World","date":"2020-05-01","tags":["test"]}}},"pageContext":{"slug":"/hello-world/"}}}
