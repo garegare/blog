@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-fixed-page-jsx","path":"/sample/","result":{"data":{"markdownRemark":{"html":"<p>sample</p>","frontmatter":{"title":"SamplePage","date":"2020-05-01"}}},"pageContext":{"slug":"/sample/"}}}
+{"componentChunkName":"component---src-templates-fixed-page-jsx","path":"/sample/","result":{"data":{"markdownRemark":{"html":"<p>sample</p>","frontmatter":{"title":"SamplePage","date":"2020年05月01日"}}},"pageContext":{"slug":"/sample/"}}}
