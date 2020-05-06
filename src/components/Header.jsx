@@ -22,10 +22,10 @@ export default ({ page }) => {
   return (
     <header>
       <div className={styles.headerBox}>
-        <h1>
+        <h1 className={styles.headerTitle}>
           <Link to="/" className={styles.headerLink}>{title}</Link>
         </h1>
-        <p>{description}</p>
+        <p className={styles.headerDesc}>{description}</p>
       </div>
     </header>
   )

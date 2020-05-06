@@ -1,10 +1,20 @@
 .header-box {
-  background: white;
-  background-image: radial-gradient(lightsteelblue 50%, transparent 0), radial-gradient(lightsteelblue 50%, transparent 0);
+  background: beige;
+  background-image: radial-gradient(#ada 50%, transparent 0), radial-gradient(#ada 50%, transparent 0);
   background-position: 0 0, 10px 10px;
   background-size: 20px 20px;
   box-sizing: border-box;
   padding: 15px;
+}
+
+.header-title {
+  margin: unset;
+}
+
+.header-desc {
+  margin: unset;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .header-link {

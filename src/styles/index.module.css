@@ -5,9 +5,13 @@
 .index-date {
   margin: unset;
   font-size:12px;
+  text-align: right;
 }
 
 .index-title {
+  background: khaki;
+  padding: 8px;
+  border-radius: 4px;
   margin: unset;
 }
 

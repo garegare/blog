@@ -1,7 +1,12 @@
 .fixed-page-title {
+  background: khaki;
+  padding: 8px;
+  border-radius: 4px;
   margin: unset;
 }
 .fixed-page-date {
   margin: unset;
   margin-top: 2px;
+  font-size:12px;
+  text-align: right;
 }

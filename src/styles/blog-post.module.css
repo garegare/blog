@@ -1,7 +1,12 @@
 .blog-post-title {
+  background: khaki;
+  padding: 8px;
+  border-radius: 4px;
   margin: unset;
 }
 .blog-post-date {
+  font-size:12px;
+  text-align: right;
   margin: unset;
   margin-top: 2px;
 }
@@ -15,6 +20,6 @@
   margin-right: 10px;
   padding: 4px;
   display: inline;
-  background: lightsteelblue;
-  border-radius: 5px;
+  background: burlywood;
+  border-radius: 4px;
 }
