@@ -5,3 +5,5 @@ tags  : [test]
 ---
 
 Hello world
+
+![sample](sample.jpg)

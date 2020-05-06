@@ -15,8 +15,12 @@
   color: black;
 }
 
-.index-link:link, .index-link:visited, .index-link:hover, .index-link:active: {
+.index-link:link, .index-link:visited {
   color: black;
+}
+
+.index-link:active, .index-link:hover {
+  color: red;
 }
 
 .index-hr {

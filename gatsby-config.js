@@ -11,6 +11,7 @@ module.exports = {
     description: "hogehoge",
   },
   plugins: [
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -18,7 +19,6 @@ module.exports = {
         path: `${__dirname}/contents/blogs`,
       },
     },
-    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -26,5 +26,18 @@ module.exports = {
         path: `${__dirname}/contents/fixedPages`,
       },
     },
-  ],
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+  ]
 }
