@@ -7,8 +7,8 @@
 module.exports = {
   pathPrefix: `/blog`,
   siteMetadata: {
-    title: "blog",
-    description: "hogehoge",
+    title: "yakiniku-teishoku",
+    description: "日々の備忘録など",
   },
   plugins: [
     "gatsby-plugin-sharp",
