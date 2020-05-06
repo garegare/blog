@@ -5,3 +5,14 @@
   margin-top: 8px;
   list-style: none;
 }
+
+.twitter-logo {
+  width:24px;
+  height:24px;
+  background-image: url(../../static/Twitter_Social_Icon_Circle_Color.svg);
+}
+
+.sidebar-hr {
+  border: 0;
+  border-top: 1px dashed gray;
+}

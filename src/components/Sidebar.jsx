@@ -55,6 +55,8 @@ export default () => {
   return (
     <>
       <div>
+        <div className={styles.twitterLogo} />
+        <hr className={styles.sidebarHr} />
         <h3 className={styles.sidebarTopic}>このページについて</h3>
         <ul className={styles.sidebarUl}>
           {fixedPages.map(
