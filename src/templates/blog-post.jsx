@@ -14,12 +14,11 @@ export default ({
 }) => {
   return (
     <Layout>
+      <h2 className={styles.blogPostTitle}>{title}</h2>
+      <p className={styles.blogPostDate}>{date}</p>
       <ul className={styles.blogPostTags}>
         {tags.map((tag) => (<li className={styles.blogPostTag}>{tag}</li>))}
       </ul>
-      <hr/>
-      <h2 className={styles.blogPostTitle}>{title}</h2>
-      <p className={styles.blogPostDate}>{date}</p>
       <div dangerouslySetInnerHTML={{__html: html}} />
     </Layout>
   )

@@ -20,7 +20,6 @@ export default ({
           },
         }) => (
           <div key={id}>
-            <hr className={styles.tagsHr} />
             <h2 className={styles.tagsTitle}><Link to={slug} className={styles.tagsLink}>{title}</Link></h2>
             <p className={styles.tagsDate}>{date}</p>
             <div dangerouslySetInnerHTML={{__html: html}} />

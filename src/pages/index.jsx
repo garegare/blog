@@ -19,7 +19,6 @@ export default ({
         },
       }) => (
         <div key={id} className={styles.indexBox}>
-          <hr className={styles.indexHr}/>
           <h2 className={styles.indexTitle}><Link to={slug} className={styles.indexLink}>{title}</Link></h2>
           <p className={styles.indexDate}>{date}</p>
           <p>{excerpt}</p>

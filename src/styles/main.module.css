@@ -5,6 +5,7 @@
 .main-left {
     padding: 10px;
     width: 65%;
+    min-width: 585px;
 }
 
 .main-right {

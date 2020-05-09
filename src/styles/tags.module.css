@@ -9,11 +9,7 @@
   padding: 8px;
   border-radius: 4px;
   margin: unset;
-}
-
-.tags-hr {
-  border: 0;
-  border-top: 1px dashed gray;
+  height: 28px;
 }
 
 .tags-link {

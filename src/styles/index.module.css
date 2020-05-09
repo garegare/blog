@@ -26,8 +26,3 @@
 .index-link:active, .index-link:hover {
   color: red;
 }
-
-.index-hr {
-  border: 0;
-  border-top: 1px dashed gray;
-}
