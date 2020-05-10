@@ -8,3 +8,13 @@ body {
 a {
   text-decoration: none;
 }
+
+table {
+  border-collapse: collapse;
+  border: solid 1px black;
+}
+
+table th, table td {
+  padding: 5px 10px;
+  border: dashed 1px black;
+}
