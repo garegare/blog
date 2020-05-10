@@ -4,12 +4,14 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const config = require("./privateData.json");
+
 module.exports = {
   pathPrefix: `/blog`,
   siteMetadata: {
     title: "yakiniku-teishoku",
     description: "日々の備忘録など",
-    twitter: "https://twitter.com/nn70010666",
+    twitter: config.twitter,
   },
   plugins: [
     "gatsby-plugin-sharp",
@@ -38,6 +40,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: config.googleAnalyticsID
       },
     },
   ]
