@@ -9,6 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "yakiniku-teishoku",
     description: "日々の備忘録など",
+    twitter: "https://twitter.com/nn70010666",
   },
   plugins: [
     "gatsby-plugin-sharp",

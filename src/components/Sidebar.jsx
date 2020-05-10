@@ -7,6 +7,7 @@ export default () => {
     recentlyAllMarkdownRemark: { edges: recentlyBlogs },
     tagsAllMarkdownRemark: { group: tags },
     fixedPagesAllMarkdownRemark: { edges: fixedPages },
+    site: { siteMetadata: { twitter } },
   } = useStaticQuery(
     graphql`
       query{
@@ -49,13 +50,18 @@ export default () => {
             }
           }
         }
+        site {
+          siteMetadata {
+            twitter
+          }
+        }
       }
     `
   )
   return (
     <>
       <div>
-        <div className={styles.twitterLogo} />
+        <a href={twitter}><div className={styles.twitterLogo} /></a>
         <hr className={styles.sidebarHr} />
         <h3 className={styles.sidebarTopic}>このページについて</h3>
         <ul className={styles.sidebarUl}>
