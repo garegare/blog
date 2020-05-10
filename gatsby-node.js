@@ -26,7 +26,9 @@ exports.createPages = async ({graphql, actions}) => {
   const {createPage} = actions
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      blogMarkdownRemark: allMarkdownRemark(
+        filter: {fields: {sourceName: {eq: "blogs"}}}
+      ){
         edges {
           node {
             fields {
@@ -41,27 +43,29 @@ exports.createPages = async ({graphql, actions}) => {
           tag: fieldValue
         }
       }
+      fixedMarkdownRemark: allMarkdownRemark(
+        filter: {fields: {sourceName: {eq: "fixedPages"}}}
+      ){
+        edges {
+          node {
+            fields {
+              sourceName
+              slug
+            }
+          }
+        }
+      }
     } 
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({node}) => {
-    if (node.fields.sourceName == "blogs") {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve("./src/templates/blog-post.jsx"),
-        context: {
-            slug: node.fields.slug,
-        },
-      })
-    } else if (node.fields.sourceName == "fixedPages") {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve("./src/templates/fixed-page.jsx"),
-        context: {
-            slug: node.fields.slug,
-        },
-      })
-    }
+  result.data.blogMarkdownRemark.edges.forEach(({node}) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve("./src/templates/blog-post.jsx"),
+      context: {
+          slug: node.fields.slug,
+      },
+    })
   })
   result.data.tagsAllMarkdownRemark.group.forEach(({tag}) => {
     createPage({
@@ -69,6 +73,15 @@ exports.createPages = async ({graphql, actions}) => {
       component: path.resolve("./src/templates/tags.jsx"),
       context: {
         tag,
+      },
+    })
+  })
+  result.data.fixedMarkdownRemark.edges.forEach(({node}) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve("./src/templates/fixed-page.jsx"),
+      context: {
+          slug: node.fields.slug,
       },
     })
   })

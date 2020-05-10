@@ -23,11 +23,14 @@ export default ({
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: {slug: { eq: $slug }}) {
+    markdownRemark(
+      fields: {slug: { eq: $slug }}
+    ) {
       html
       frontmatter {
         title
         date(formatString: "YYYY年MM月DD日")
+        priority
       }
     }
   }

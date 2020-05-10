@@ -36,7 +36,7 @@ export default () => {
         }
         fixedPagesAllMarkdownRemark: allMarkdownRemark(
           filter: { fields: { sourceName: { eq: "fixedPages" } } }
-          sort: { fields: [ frontmatter___date ], order: DESC }
+          sort: { fields: [ frontmatter___priority ], order: ASC }
         ) {
           edges {
             node {
